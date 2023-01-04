@@ -9,11 +9,12 @@ postLogin: (req, res) =>{
     let id = req.body.id;
     let password = req.body.password;
     if(err) throw err;
+    let user = database.id
     else{
         if(id.length == 0 && password.length == 0){
             res.redirect("/login");
         }
-        else if()
+        else if(user === null)
     }
 }
 
